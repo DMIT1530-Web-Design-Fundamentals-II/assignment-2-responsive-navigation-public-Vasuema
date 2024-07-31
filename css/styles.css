@@ -6,6 +6,9 @@
   --lt-grey: #707070;
   --off-white: #f1f1f1;
   --off-green: #727812;
+  --black: black;
+  --yellow: #b29124;
+  --red: red;
 }
 
 /* ----------------------baseline-------------------------- */
@@ -13,8 +16,10 @@
   display: none;
 }
 svg {
+  fill: var(--white);
   width: 3rem;
   color: var(--white);
+  margin-left: 1rem;
 }
 header {
   background-color: var(--dk-grey);
@@ -101,6 +106,7 @@ th {
 }
 
 /*---------------------Good Food-----------------------------*/
+/*---------------------Local Travel-------------------------*/
 
 .good-food h2,
 .local-travel h2 {
@@ -166,4 +172,63 @@ button {
 .local-travel > h2 {
   position: relative;
   left: 15rem;
+}
+
+/*---------------------Stuff-------------------------*/
+.stuff > h2 {
+  position: relative;
+  left: 40rem;
+  font-size: 8rem;
+}
+
+.stuff > svg {
+  fill: red;
+  position: relative;
+  top: 5.25rem;
+  left: 38rem;
+  width: 4rem;
+  z-index: 1;
+}
+
+.all-cards {
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+  gap: 2rem;
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+}
+.card {
+  background-color: var(--off-white);
+  font-size: 2rem;
+  height: 39rem;
+  max-width: 29rem;
+  margin-bottom: 50rem;
+}
+.card > h3 {
+  text-transform: capitalize;
+  font-size: 4rem;
+  display: inline-block;
+  max-width: min-content;
+  line-height: 4rem;
+  margin-top: 5rem;
+  margin-left: 3rem;
+  margin-bottom: 1.5rem;
+}
+.card > a {
+  text-transform: uppercase;
+  color: var(--black);
+  margin-left: 3rem;
+}
+.card > img {
+  width: 23rem;
+  height: 31rem;
+  position: relative;
+  top: 2rem;
+  left: 3rem;
+}
+.card > p {
+  width: 23rem;
+  margin-left: 3rem;
+  margin-bottom: 3rem;
 }
