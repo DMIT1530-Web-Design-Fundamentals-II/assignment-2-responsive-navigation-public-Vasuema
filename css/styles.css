@@ -232,3 +232,45 @@ button {
   margin-left: 3rem;
   margin-bottom: 3rem;
 }
+
+/*---------------------video blog-------------------------*/
+
+.video-blog {
+  display: flex;
+  font-size: 2rem;
+  background-color: var(--dk-grey);
+  margin-left: 15rem;
+  margin-right: 40rem;
+  margin-bottom: 3rem;
+  padding: 6rem;
+  color: var(--white);
+}
+.vb-text>button{
+  background-color: var(--white);
+  color: var(--dker-grey);
+  position: relative;
+  left: 48rem;
+}
+.video-blog h2 {
+  display: inline-block;
+  max-width: min-content;
+  line-height: 4.5rem;
+  font-size: 6rem;
+  position: relative;
+  left: 45rem;
+}
+.video-blog h2>span{
+ font-size: 8rem;
+}
+.video-blog img{
+  position: relative;
+  left: 47rem;
+  width: 40%;
+}
+.vb-text p{
+  position: relative;
+  left: 48rem;
+  height: 7rem;
+  width: 30rem;
+  margin-right: 4rem;
+}
