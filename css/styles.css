@@ -1,3 +1,23 @@
+/*------------------------Fonts----------------------------- */
+@font-face {
+  font-family: Cooper Hewitt;
+  src: url(/assignment-two-responsive-nav-assets/CooperHewitt-Heavy.otf);
+}
+
+@font-face {
+  font-family: "Merriweather Sans", sans-serif;
+  src: url("https://fonts.googleapis.com/css2?family=Merriweather+Sans:ital,wght@0,300..800;1,300..800&display=swap");
+}
+
+body {
+  font-family: "merriweather sans";
+}
+h1,
+h2,
+h3 {
+  font-family: "cooper hewitt";
+}
+
 /*----------------------------colors-----------------------*/
 :root {
   --dk-grey: #3e3e3e;
@@ -9,6 +29,7 @@
   --black: black;
   --yellow: #b29124;
   --red: red;
+  --orange: #c55614;
 }
 
 /* ----------------------baseline-------------------------- */
@@ -24,6 +45,19 @@ svg {
 header {
   background-color: var(--dk-grey);
   display: flex;
+}
+header h3 > a:hover {
+  color: var(--off-green);
+}
+header ul li > ul li:hover {
+  background-color: var(--lt-grey);
+  border-radius: 2rem;
+  width: 90%;
+}
+button:hover {
+  cursor: pointer;
+  background-color: var(--orange) !important;
+  color: var(--white) !important;
 }
 /* ------------------------------nav-------------------------*/
 nav {
@@ -51,6 +85,9 @@ nav ul li:hover ul {
   position: absolute;
   background-color: var(--dk-grey);
 }
+nav ul li ul li a:hover {
+  text-decoration: none;
+}
 nav ul li ul li a {
   text-align: center;
   white-space: nowrap;
@@ -69,6 +106,7 @@ nav ul li ul li a {
   font-weight: 900;
   text-decoration: none;
   font-size: 5rem;
+  margin-left: 4rem;
 }
 
 /*-------------------------------------footer------------------------------------ */
@@ -87,12 +125,15 @@ footer {
   list-style: none;
 }
 table {
-  margin-left: 3rem;
+  margin-left: 8rem;
 }
 table a {
   text-decoration: none;
   color: var(--white);
   padding: 1rem;
+}
+table a:hover {
+  color: var(--off-green);
 }
 th {
   color: var(--white);
@@ -103,6 +144,10 @@ th {
 }
 .socials {
   padding-top: 3rem;
+}
+
+footer svg:hover {
+  fill: var(--off-green);
 }
 
 /*---------------------Good Food-----------------------------*/
@@ -177,7 +222,7 @@ button {
 /*---------------------Stuff-------------------------*/
 .stuff > h2 {
   position: relative;
-  left: 40rem;
+  left: 30rem;
   font-size: 8rem;
 }
 
@@ -185,7 +230,7 @@ button {
   fill: red;
   position: relative;
   top: 5.25rem;
-  left: 38rem;
+  left: 28rem;
   width: 4rem;
   z-index: 1;
 }
@@ -194,7 +239,7 @@ button {
   display: grid;
   grid-template-columns: auto auto auto auto;
   gap: 2rem;
-  width: 80%;
+  width: 90%;
   margin-left: auto;
   margin-right: auto;
 }
@@ -214,6 +259,7 @@ button {
   margin-top: 5rem;
   margin-left: 3rem;
   margin-bottom: 1.5rem;
+  color: var(--yellow);
 }
 .card > a {
   text-transform: uppercase;
@@ -239,16 +285,15 @@ button {
   display: flex;
   font-size: 2rem;
   background-color: var(--dk-grey);
-  margin-left: 15rem;
-  margin-right: 40rem;
-  margin-bottom: 3rem;
+  margin: 9rem 40rem 6rem 8rem;
   padding: 6rem;
   color: var(--white);
 }
-.vb-text>button{
+.vb-text > button {
   background-color: var(--white);
   color: var(--dker-grey);
   position: relative;
+  top: 3rem;
   left: 48rem;
 }
 .video-blog h2 {
@@ -259,15 +304,15 @@ button {
   position: relative;
   left: 45rem;
 }
-.video-blog h2>span{
- font-size: 8rem;
+.video-blog h2 > span {
+  font-size: 8rem;
 }
-.video-blog img{
+.video-blog img {
   position: relative;
   left: 47rem;
   width: 40%;
 }
-.vb-text p{
+.vb-text p {
   position: relative;
   left: 48rem;
   height: 7rem;
