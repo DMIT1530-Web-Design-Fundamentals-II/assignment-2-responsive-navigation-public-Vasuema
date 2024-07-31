@@ -4,6 +4,8 @@
   --dker-grey: #404040;
   --white: #f2f2f2;
   --lt-grey: #707070;
+  --off-white: #f1f1f1;
+  --off-green: #727812;
 }
 
 /* ----------------------baseline-------------------------- */
@@ -100,7 +102,8 @@ th {
 
 /*---------------------Good Food-----------------------------*/
 
-.good-food h2 {
+.good-food h2,
+.local-travel h2 {
   font-size: 5rem;
   color: var(--lt-grey);
   line-height: 4.5rem;
@@ -109,13 +112,20 @@ th {
   color: var(--dker-grey);
   font-size: 7rem;
 }
-.main-content {
+.local-travel h2 > span {
+  color: var(--off-green);
+  font-size: 7rem;
+}
+
+.all-good-food,
+.all-local-travel {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 100vh;
+  margin-top: 4rem;
+  margin-bottom: 4rem;
 }
-.main-content p {
+.all-good-food p {
   font-size: 1.5rem;
   padding-right: 3rem;
   margin-top: 2rem;
@@ -134,4 +144,26 @@ button {
   top: 2.5rem;
   left: 11rem;
   z-index: -1;
+}
+.all-local-travel {
+  background-color: var(--off-white);
+  height: 27rem;
+  margin-top: 10rem;
+  margin-bottom: 10rem;
+}
+.all-local-travel > img {
+  margin-left: 20.5rem;
+}
+.local-travel > button {
+  position: relative;
+  top: 1rem;
+  left: 15rem;
+}
+.local-travel > h2 > span {
+  position: relative;
+  left: -15rem;
+}
+.local-travel > h2 {
+  position: relative;
+  left: 15rem;
 }
