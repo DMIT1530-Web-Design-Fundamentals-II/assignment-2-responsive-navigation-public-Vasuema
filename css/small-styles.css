@@ -1,0 +1,172 @@
+@media screen and (max-width: 819px) {
+  nav {
+    width: 100vw;
+  }
+  .submenu {
+    display: none;
+  }
+  .remove-flex {
+    display: flex;
+    flex-direction: column;
+  }
+  .menu {
+    position: absolute;
+    z-index: 100;
+    left: 13rem;
+    cursor: pointer;
+  }
+  .show-nav {
+    display: block;
+    position: relative;
+    left: 5rem;
+  }
+  .submenu a {
+    justify-content: end;
+  }
+  .submenu svg {
+    display: none;
+  }
+  footer {
+    display: flex;
+    flex-wrap: wrap;
+    font-size: 1rem;
+  }
+  .footer-links {
+    display: grid;
+    grid-template-columns: auto auto;
+    padding: 0;
+    margin: 0;
+  }
+
+  .good-food {
+    display: block;
+    text-align: left;
+    margin-left: 1rem;
+  }
+  .all-good-food {
+    margin-top: 2rem;
+  }
+
+  .all-good-food button {
+    margin-bottom: 2rem;
+  }
+  .good-food > h2 {
+    position: relative;
+    left: 4rem;
+  }
+  .good-food > h2 span {
+    position: relative;
+    left: -4rem;
+  }
+  .good-food-img {
+    width: 80%;
+    margin-left: 1rem;
+    margin-right: auto;
+  }
+  .good-food-img img:first-of-type {
+    position: relative;
+    top: 2.5rem;
+    left: 3rem;
+    overflow: hidden;
+    z-index: -1;
+    margin-right: 1rem;
+  }
+  .all-local-travel {
+    margin-top: 5rem;
+    margin-bottom: 5rem;
+  }
+  .local-travel > h2 > span {
+    position: relative;
+    left: -4rem;
+  }
+  .local-travel > h2 {
+    position: relative;
+    padding-top: 4rem;
+    width: 90%;
+    margin-left: 5rem;
+    margin-right: auto;
+  }
+
+  .local-travel > button {
+    position: relative;
+    top: 1rem;
+    left: 13rem;
+    margin-bottom: 3rem;
+  }
+
+  .all-local-travel > img {
+    margin-left: 5rem;
+    margin-right: 1rem;
+    max-width: 70vw;
+    padding-bottom: 3rem;
+  }
+  .stuff > h2 {
+    position: relative;
+    font-size: 8rem;
+    text-align: center;
+  }
+  .stuff > svg {
+    position: relative;
+    top: 5rem;
+    left: 3.5rem;
+    width: 4rem;
+  }
+  .all-cards {
+    display: grid;
+    grid-template-columns: auto;
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .card {
+    height: 35rem;
+    margin-bottom: 55rem;
+    width: 100%;
+  }
+  .card > img {
+    width: 80%;
+    height: 30rem;
+    position: relative;
+    top: 1rem;
+    left: 2.5rem;
+  }
+  .card > h3 {
+    margin-top: 3rem;
+    margin-left: 1rem;
+  }
+  .card > p {
+    padding-bottom: 2rem;
+    padding-top: 1rem;
+  }
+  .menu {
+    padding: 1rem;
+    margin-left: 10rem;
+  }
+  nav {
+    justify-content: space-between;
+    margin-left: -3rem;
+  }
+  .video-blog {
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 2rem;
+  }
+  .video-blog h2 {
+    justify-content: left;
+    padding: 2rem;
+  }
+  .vb-text p {
+    text-align: left;
+    margin-left: 1rem;
+  }
+
+  .video-blog img {
+    width: 100%;
+  }
+  .vb-text > button {
+    position: relative;
+    left: 12rem;
+    margin-bottom: 3rem;
+  }
+}

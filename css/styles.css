@@ -1,11 +1,11 @@
 /*------------------------Fonts----------------------------- */
 @font-face {
-  font-family: Cooper Hewitt;
+  font-family: "Cooper Hewitt";
   src: url(/assignment-two-responsive-nav-assets/CooperHewitt-Heavy.otf);
 }
 
 @font-face {
-  font-family: "Merriweather Sans", sans-serif;
+  font-family: "Merriweather Sans";
   src: url("https://fonts.googleapis.com/css2?family=Merriweather+Sans:ital,wght@0,300..800;1,300..800&display=swap");
 }
 
@@ -59,31 +59,35 @@ button:hover {
   background-color: var(--orange) !important;
   color: var(--white) !important;
 }
+button {
+  font-size: 1.5rem;
+  border-radius: 3rem;
+  padding: 0.5rem 4rem 0.5rem 4rem;
+  margin-top: 1rem;
+  background-color: var(--dker-grey);
+  border: none;
+  color: var(--white);
+}
+
 /* ------------------------------nav-------------------------*/
 nav {
   display: flex;
-  align-items: baseline;
-  margin-left: 3rem;
+  width: 100%;
+  justify-content: space-between;
 }
 nav ul {
+  display: flex;
   list-style: none;
-}
-nav ul li {
-  display: inline-block;
-  position: relative;
-  margin-bottom: 0.5rem;
-}
-nav a {
-  color: var(--white);
-  font-size: 2.5rem;
-}
-nav ul li ul {
-  display: none;
 }
 nav ul li:hover ul {
   display: block;
   position: absolute;
   background-color: var(--dk-grey);
+}
+
+nav a {
+  color: var(--white);
+  font-size: 2.5rem;
 }
 nav ul li ul li a:hover {
   text-decoration: none;
@@ -110,13 +114,21 @@ nav ul li ul li a {
 }
 
 /*-------------------------------------footer------------------------------------ */
+.footer-links a:hover {
+  color: var(--off-green);
+}
+.footer-links ul li:first-child {
+  color: var(--white);
+  font-weight: 900;
+  font-size: 2rem;
+}
+
 footer {
+  padding: 2.5rem 0 4rem 0;
   background-color: var(--dk-grey);
   font-size: 2rem;
-  display: grid;
-  grid-template-columns: 50% 20%;
-  padding: 2.5rem 0 4rem 0;
 }
+
 .footer-links a {
   text-decoration: none;
   color: var(--white);
@@ -124,23 +136,13 @@ footer {
 .footer-links li {
   list-style: none;
 }
-table {
-  margin-left: 8rem;
+.footer-links {
+  display: flex;
+  margin-left: 6rem;
 }
-table a {
-  text-decoration: none;
-  color: var(--white);
-  padding: 1rem;
-}
-table a:hover {
-  color: var(--off-green);
-}
-th {
-  color: var(--white);
-  font-size: 2.5rem;
-  text-align: start;
-  padding-top: 2rem;
-  padding-right: 5rem;
+.footer-links > ul:nth-child(2),
+.footer-links > ul:nth-child(3) {
+  margin-left: 5rem;
 }
 .socials {
   padding-top: 3rem;
@@ -152,7 +154,11 @@ footer svg:hover {
 
 /*---------------------Good Food-----------------------------*/
 /*---------------------Local Travel-------------------------*/
-
+.all-local-travel {
+  background-color: var(--off-white);
+  min-width: 150%;
+  justify-content: center;
+}
 .good-food h2,
 .local-travel h2 {
   font-size: 5rem;
@@ -168,87 +174,24 @@ footer svg:hover {
   font-size: 7rem;
 }
 
-.all-good-food,
-.all-local-travel {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin-top: 4rem;
-  margin-bottom: 4rem;
-}
 .all-good-food p {
   font-size: 1.5rem;
   padding-right: 3rem;
   margin-top: 2rem;
 }
-button {
-  font-size: 1.5rem;
-  border-radius: 3rem;
-  padding: 0.5rem 4rem 0.5rem 4rem;
-  margin-top: 1rem;
-  background-color: var(--dker-grey);
-  border: none;
-  color: var(--white);
-}
-.good-food-img img:first-of-type {
-  position: relative;
-  top: 2.5rem;
-  left: 11rem;
-  z-index: -1;
-}
-.all-local-travel {
-  background-color: var(--off-white);
-  height: 27rem;
-  margin-top: 10rem;
-  margin-bottom: 10rem;
-}
-.all-local-travel > img {
-  margin-left: 20.5rem;
-}
-.local-travel > button {
-  position: relative;
-  top: 1rem;
-  left: 15rem;
-}
-.local-travel > h2 > span {
-  position: relative;
-  left: -15rem;
-}
-.local-travel > h2 {
-  position: relative;
-  left: 15rem;
-}
 
 /*---------------------Stuff-------------------------*/
 .stuff > h2 {
-  position: relative;
-  left: 30rem;
-  font-size: 8rem;
+  color: var(--dk-grey);
 }
-
 .stuff > svg {
   fill: red;
-  position: relative;
-  top: 5.25rem;
-  left: 28rem;
   width: 4rem;
   z-index: 1;
-}
-
-.all-cards {
-  display: grid;
-  grid-template-columns: auto auto auto auto;
-  gap: 2rem;
-  width: 90%;
-  margin-left: auto;
-  margin-right: auto;
 }
 .card {
   background-color: var(--off-white);
   font-size: 2rem;
-  height: 39rem;
-  max-width: 29rem;
-  margin-bottom: 50rem;
 }
 .card > h3 {
   text-transform: capitalize;
@@ -256,9 +199,6 @@ button {
   display: inline-block;
   max-width: min-content;
   line-height: 4rem;
-  margin-top: 5rem;
-  margin-left: 3rem;
-  margin-bottom: 1.5rem;
   color: var(--yellow);
 }
 .card > a {
@@ -266,56 +206,26 @@ button {
   color: var(--black);
   margin-left: 3rem;
 }
-.card > img {
-  width: 23rem;
-  height: 31rem;
-  position: relative;
-  top: 2rem;
-  left: 3rem;
-}
-.card > p {
-  width: 23rem;
-  margin-left: 3rem;
-  margin-bottom: 3rem;
+.card > a:hover {
+  color: var(--off-green);
 }
 
 /*---------------------video blog-------------------------*/
-
 .video-blog {
-  display: flex;
   font-size: 2rem;
   background-color: var(--dk-grey);
-  margin: 9rem 40rem 6rem 8rem;
-  padding: 6rem;
   color: var(--white);
-}
-.vb-text > button {
-  background-color: var(--white);
-  color: var(--dker-grey);
-  position: relative;
-  top: 3rem;
-  left: 48rem;
 }
 .video-blog h2 {
   display: inline-block;
   max-width: min-content;
-  line-height: 4.5rem;
+  line-height: 6rem;
   font-size: 6rem;
-  position: relative;
-  left: 45rem;
 }
 .video-blog h2 > span {
   font-size: 8rem;
 }
-.video-blog img {
-  position: relative;
-  left: 47rem;
-  width: 40%;
-}
-.vb-text p {
-  position: relative;
-  left: 48rem;
-  height: 7rem;
-  width: 30rem;
-  margin-right: 4rem;
+.vb-text > button {
+  background-color: var(--white);
+  color: var(--dker-grey);
 }

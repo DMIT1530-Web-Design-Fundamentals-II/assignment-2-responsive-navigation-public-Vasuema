@@ -1,0 +1,131 @@
+@media screen and (min-width: 960px) {
+  .footer-links {
+    display: flex;
+    margin-left: 5rem;
+  }
+.socials{
+  margin-left: 40rem;
+}  
+.menu{
+  display: none;
+}
+  nav ul li ul {
+    display: none;
+  }
+  nav ul li {
+    display: inline-block;
+    position: relative;
+    margin-bottom: 0.5rem;
+  }
+
+  .all-good-food,
+  .all-local-travel {
+    width: 80%;
+    margin-left: auto;
+    display: flex;
+    align-items: center;
+    margin-bottom: 4rem;
+  }
+  .good-food-img img:first-of-type {
+    position: relative;
+    top: 2.5rem;
+    left: 11rem;
+    z-index: -1;
+  }
+  .all-local-travel {
+    height: 27rem;
+    margin-top: 10rem;
+    margin-bottom: 10rem;
+    margin-left: -52rem;
+    }
+  .local-travel > h2 > span {
+    position: relative;
+    left: -15rem;
+  }
+  .local-travel > h2 {
+    position: relative;
+    left: 15rem;
+  }
+  .local-travel > button {
+    position: relative;
+    top: 1rem;
+    left: 15rem;
+  }
+  .all-local-travel > img {
+    margin-left: 20.5rem;
+    margin-top: 3rem;
+  }
+  .stuff > h2 {
+    position: relative;
+    left: 30rem;
+    font-size: 8rem;
+    text-align: left;
+  }
+  .stuff > svg {
+    position: relative;
+    top: 5.25rem;
+    left: 28rem;
+    width: 4rem;
+  }
+  .all-cards {
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    gap: 2rem;
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .card {
+    height: 39rem;
+    max-width: 29rem;
+    margin-bottom: 50rem;
+  }
+  .card > img {
+    width: 23rem;
+    height: 31rem;
+    position: relative;
+    top: 2rem;
+    left: 3rem;
+  }
+  .card > h3 {
+    margin-top: 5rem;
+    margin-left: 3rem;
+    margin-bottom: 1.5rem;
+  }
+  .card > p {
+    width: 23rem;
+    margin-left: 3rem;
+    margin-bottom: 3rem;
+  }
+  .video-blog{
+    margin: 9rem 40rem 6rem 8rem;
+    padding: 6rem;
+  }
+  .video-blog {
+    display: flex;
+    width: 66%;
+  }
+  .video-blog h2 {
+    position: relative;
+    left: 45rem;
+  }  
+  .vb-text p {
+    position: relative;
+    left: 48rem;
+    height: 7rem;
+    width: 30rem;
+    margin-right: 4rem;
+  }
+ 
+  .video-blog img {
+    position: relative;
+    left: 47rem;
+    width: 40%;
+  }
+  .vb-text > button {
+    position: relative;
+    top: 3rem;
+    left: 48rem;
+  }
+
+}
