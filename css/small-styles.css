@@ -22,12 +22,13 @@
   }
   .show-nav > ul {
     display: block;
+    justify-content: end;
   }
   .show-nav > ul > li > ul {
     display: block;
   }
-  .submenu a {
-    justify-content: end;
+  .submenu li {
+    display: block;
   }
   .submenu svg {
     display: none;
@@ -79,6 +80,7 @@
     height: 20rem;
   }
   .all-local-travel {
+    display: flex;
     margin-top: 5rem;
     margin-bottom: 5rem;
   }
@@ -102,9 +104,9 @@
   }
 
   .all-local-travel > img {
-    margin-left: 10rem;
+    margin-left: 8rem;
     margin-right: 1rem;
-    max-width: 70vw;
+    max-width: 70%;
     padding-bottom: 3rem;
   }
   .stuff > h2 {
