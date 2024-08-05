@@ -20,6 +20,12 @@
     position: relative;
     left: 5rem;
   }
+  .show-nav > ul{
+    display: block;
+  }
+  .show-nav > ul >li > ul{
+    display: block;
+  }
   .submenu a {
     justify-content: end;
   }

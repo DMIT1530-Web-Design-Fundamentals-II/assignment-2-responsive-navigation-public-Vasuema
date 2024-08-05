@@ -3,12 +3,12 @@
     display: flex;
     margin-left: 5rem;
   }
-.socials{
-  margin-left: 40rem;
-}  
-.menu{
-  display: none;
-}
+  .socials {
+    margin-left: 40rem;
+  }
+  .menu {
+    display: none;
+  }
   nav ul li ul {
     display: none;
   }
@@ -16,6 +16,11 @@
     display: inline-block;
     position: relative;
     margin-bottom: 0.5rem;
+  }
+
+  nav ul li:hover ul {
+    display: block;
+    position: absolute;
   }
 
   .all-good-food,
@@ -37,7 +42,7 @@
     margin-top: 10rem;
     margin-bottom: 10rem;
     margin-left: -52rem;
-    }
+  }
   .local-travel > h2 > span {
     position: relative;
     left: -15rem;
@@ -97,7 +102,7 @@
     margin-left: 3rem;
     margin-bottom: 3rem;
   }
-  .video-blog{
+  .video-blog {
     margin: 9rem 40rem 6rem 8rem;
     padding: 6rem;
   }
@@ -108,7 +113,7 @@
   .video-blog h2 {
     position: relative;
     left: 45rem;
-  }  
+  }
   .vb-text p {
     position: relative;
     left: 48rem;
@@ -116,7 +121,7 @@
     width: 30rem;
     margin-right: 4rem;
   }
- 
+
   .video-blog img {
     position: relative;
     left: 47rem;
@@ -127,5 +132,4 @@
     top: 3rem;
     left: 48rem;
   }
-
 }

@@ -80,8 +80,6 @@ nav ul {
   list-style: none;
 }
 nav ul li:hover ul {
-  display: block;
-  position: absolute;
   background-color: var(--dk-grey);
 }
 
