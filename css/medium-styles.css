@@ -1,3 +1,114 @@
-@media medium and (min-width: 820px) {
-    
+@media screen and (min-width: 820px) and (max-width: 959px) {
+  .menu {
+    display: none;
+  }
+  .all-good-food,
+  .all-local-travel {
+    width: 90%;
+    margin-left: auto;
+    display: flex;
+    align-items: center;
+    margin-bottom: 4rem;
+    margin-right: 1rem;
+  }
+  .good-food-img img:first-of-type {
+    position: relative;
+    top: 2.5rem;
+    left: 5rem;
+    z-index: -1;
+  }
+  .all-local-travel {
+    height: 27rem;
+    margin-top: 10rem;
+    margin-bottom: 10rem;
+  }
+  .local-travel > h2 > span {
+    position: relative;
+    left: -5rem;
+  }
+  .local-travel > button {
+    position: relative;
+    top: 1rem;
+    left: 5rem;
+  }
+  .all-local-travel > img {
+    margin-left: 5rem;
+    margin-top: 3rem;
+  }
+  .stuff > h2 {
+    font-size: 8rem;
+    text-align: left;
+    position: relative;
+    left: 6rem;
+  }
+  .stuff > svg {
+    position: relative;
+    top: 5.25rem;
+    left: 4.5rem;
+    width: 4rem;
+  }
+  .all-cards {
+    display: grid;
+    grid-template-columns: auto auto;
+    gap: 2rem;
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .card {
+    height: 37rem;
+    max-width: 29rem;
+    margin-bottom: 57rem;
+  }
+  .card > img {
+    width: 20rem;
+    height: 28rem;
+    position: relative;
+    top: 2rem;
+    left: 3rem;
+  }
+  .card > h3 {
+    margin-top: 6rem;
+    margin-left: 3rem;
+    margin-bottom: 1.5rem;
+  }
+  .card > p {
+    width: 23rem;
+    margin-left: 3rem;
+    margin-bottom: 3rem;
+  }
+
+  .video-blog {
+    display: flex;
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 6rem;
+    margin-bottom: 3rem;
+  }
+  .video-blog h2 {
+    position: relative;
+    left: 3rem;
+    top: 1rem;
+  }
+  .vb-text p {
+    position: relative;
+    left: 3rem;
+    top: 2rem;
+    height: 7rem;
+    width: 25rem;
+    margin-right: 4rem;
+  }
+
+  .video-blog img {
+    position: relative;
+    left: 2rem;
+    width: 60%;
+  }
+  .vb-text > button {
+    position: relative;
+    top: 4rem;
+    left: 3rem;
+  }
 }

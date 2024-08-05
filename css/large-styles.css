@@ -9,19 +9,7 @@
   .menu {
     display: none;
   }
-  nav ul li ul {
-    display: none;
-  }
-  nav ul li {
-    display: inline-block;
-    position: relative;
-    margin-bottom: 0.5rem;
-  }
 
-  nav ul li:hover ul {
-    display: block;
-    position: absolute;
-  }
 
   .all-good-food,
   .all-local-travel {
